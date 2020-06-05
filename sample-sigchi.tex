@@ -24,6 +24,7 @@
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigplan]{acmart}
 \usepackage{booktabs}
+\usepackage{todonotes}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -125,7 +126,7 @@
 
 
 \begin{abstract}
-	Measuring an organization's capability to innovate and assessing its innovation output and performance on the market is a challenging task. We proposed a comprehensive model and a suite of measurements to support this task. In the current paper, we have reflected on the impact of the work. We have mainly relied on quantitative and qualitative analysis of the citations of the paper.  
+Measuring an organization's capability to innovate and assessing its innovation output and performance on the market is a challenging task. We proposed a comprehensive model and a suite of measurements to support this task. In the current paper, we have reflected on the impact of the work. We have mainly relied on quantitative and qualitative analysis of the citations of the paper.  
 \end{abstract}
 
 %%
@@ -173,20 +174,31 @@
 %% information and builds the first part of the formatted document.
 \maketitle
 
-\section{Introduction}\label{sec:intro}
+
+\section{Introduction}\label{sec:intro}\todo {Richard}
 Innovation measurement in SE was a challenge---we contributed with a measurement framework in \theArticle~\cite{EdisonAT13}. 
 
 The paper is structured as follows: Section \ref{sec:sumpaper} summarizes the contribution of \theArticle. In Section \ref{sec:whocites}, we describe a content analysis of the articles citing \theArticle. Section \ref{sec:soa} discusses the research identified in Section \ref{sec:whocites} that has extended our work. In Section \ref{sec:impact}, we discuss the research which documents the use of our work in industrial settings. Lastly, in Section \ref{sec:fw} we suggest some directions for future research.
 
-\section{Summary and main contributions of \theArticle}\label{sec:sumpaper}
+\section{Summary and main contributions of \theArticle}\label{sec:sumpaper}\todo{Henry}
 What was done.
 
-\section{Overview of the papers citing our article}\label{sec:whocites}
-Who found it relevant (would be good to have some qualitative data on how they ref the paper). Why did so many cite it?
+\section{Methodology}
+For understanding the impact of \theArticle, we have relied on the classification schema for academic citations proposed by \citet{teufel2006annotation}. We also considered the taxonomy proposed by \citet{bornmann2008citation}. However, based on a pilot application we found \citet{teufel2006annotation} more straight forward and sufficient for our analysis. The decision is further supported by prior experience of using Bornmann and Daniel's taxonomy in software engineering literature \cite{poulding2015using}.
 
-For understanding the impact of our work, we have relied on the classification schema for academic citations proposed by \citet{teufel2006annotation}. The categories in their schema are listed and briefly described in Table~\ref{tab:CitationCategories}.
+The categories in the schema we used are listed and briefly described in Table~\ref{tab:CitationCategories}. To separate any industrial application of our work we added a separate category. 
 
-\begin{table*}[]
+On February 24, 2020, the \theArticle  had over 72 citations in Science Direct and Scopus, 61 in Web of Science Core Collection, and 234 in Google Scholar. To get a relatively complete picture of how this work has impacted further research, we decided to analyse the 234 citations on Google Scholar. 
+
+In a pilot, the first two authors classified ten randomly selected articles and discussed the use of categories. Thereafter, they divided the 234 articles among them and  independently classified them. The procedure followed is briefly summarized below: 
+Exclude citations where the full-text is not available. 
+Exclude articles which are not written in English.
+Exclude articles  that do not cite \theArticle in the full-text.
+From the title, abstract and the publication venue judge the discipline of the publication (e.g. software industry, manufacturing, farming or automotive).
+Only for conference papers and journal article, search for the citation to \theArticle in the full text, for each citation in the paper  read the entire paragraph containing it to understand the context, then classify the citation based on categories in Table \ref{tab:CitationCategories}. 
+
+
+\begin{table*}
 	\caption{Categories of citing papers from \citet{teufel2006annotation}}\label{tab:CitationCategories}
 	\begin{tabular}{llp{12cm}}
 		\toprule
@@ -195,64 +207,97 @@ For understanding the impact of our work, we have relied on the classification s
 		\midrule
 		Contrast/Comparison & CoCoGM       & Contrast/Comparison in Goals or Methods (neutral)                                                                    \\
 		& CoCoR0       & Contrast/Comparison in Results (neutral)                                                                               \\
-		& CoCo-        & Unfavourable Contrast/Comparison (current work is better than cited work)                                            \\
-		& CoCoXY       & Contrast between two cited methods                                                                                     \\
+		& CoCo-        & Unfavourable Contrast/Comparison (current work is better than the work in \theArticle)                                            \\
+		& CoCoXY       & Contrast between a cited method and the method in \theArticle                                                                                     \\
 		
 		\midrule
-		Positive sentiment  & PBas         & author uses cited work as starting point                                                                               \\
+		Positive sentiment  & PBas         & author uses the work in \theArticle as a starting point                                                                               \\
 		& PUse         & author uses definitions/models/measures                                                                                      \\
-		& PIUse\footnote{We have added this category}         & author uses cited work in industrial settings \\
-		& PModi        & author adapts or modifies definition/model/measurements                                                                                 \\
-		& PMot         & this citation is positive about approach or problem addressed (used to motivate work in current paper)                 \\
-		& PSim         & author’s work and cited work are similar                                                                               \\
-		& PSup         & author’s work and cited work are compatible/provide support for each other                                           \\
+		& PIUse\footnote{We have added this category}         & author uses the work in \theArticle in industrial settings \\
+		& PModi        & author adapts or modifies definition/model/measurements  presented in \theArticle                                                                            \\
+		& PMot         & this citation is positive about approach or problem addressed in \theArticle (used to motivate work in current paper)                 \\
+		& PSim         & author’s work and the work in \theArticle are similar                                                                               \\
+		& PSup         & author’s work and the work in \theArticle are compatible/provide support for each other                                           \\
 		
 		\midrule
-		Neutral             & Neut         & Neutral description of cited work, or not enough textual evidence for above categories or unlisted citation function.\\
+		Neutral             & Neut         & Neutral description of cited work, or not enough textual evidence for above categories.\\
 		\bottomrule
 	\end{tabular}
 \end{table*}
 
-On February 24, 2020, the \theArticle  had over 72 citations in Science Direct and Scopus, 61 in Web of Science Core Collection, and 234 in Google Scholar. To get a relatively complete picture of how this work has impacted further research, we decided to analyse the 234 citations on Google Scholar. 
+\section{Overview of the papers citing \theArticle}\label{sec:whocites}
+Who found it relevant (would be good to have some qualitative data on how they ref the paper). Why did so many cite it?
+
+
+Exclude papers 64 (52  were not written in English, 6 were inaccessible in full-text, 5 did not cite \theArticle in the body of the paper and 1 was a duplicate citation).
+
+Grey literature:  53 citations are from what we have classified as grey  literature. Of these 53, 2 are  technical reports, 10 are book chapters and 41 are theses.
+
+In total there are 108 conference papers  and 76 journal articles citing \theArticle. The analysis of their use of \theArticle is summarized in Table \ref{tab:CitationAnalysis}. 
+
+The paper has nine self citations (including one from a thesis). 
+
+When looking at the literature, where there is no stated connection to the context of software industry we see that the literature encompases several diverse fields including the following: automotive, banking, economics, farming, forestry, health sector, human resources, logistics, manufacturing, mechatronics, NGOs, oil industry, politics , restaurants and transportation. 
+
+
 
 \begin{table*}
-	\caption{Results of an analysis of the citing papers}\label{tab:CitationAnalysis}
-	\begin{tabular}{llllllll}
-		\toprule
-%		\textbf{Category}            &
-		\textbf{Sub-category }& \textbf{References} & \textbf{Self-citations} & \textbf{Our network} & \textbf{From SE} & \textbf{Outside SE} & \textbf{Peer-reviewed} & \textbf{By practitioners} \\                                                                                                          \midrule
-		 Weak         &                                                                                           \\
+	\caption{Results of an analysis of the citing papers}
+	\label{tab:CitationAnalysis}
+	\begin{tabular}{p{2.5cm}llp{1.5cm}llll}
+			\toprule
+		& Total & Weak & Comparison / Contrast & Positive                                            & Neutral & Jrnl. & Conf. \\
 		\midrule
-		CoCoGM       &                                                           \\
-		CoCoR0 \\
-		CoCo-        & \\
-		CoCoXY       & \\
-		\midrule
-		
-		PBas         & \\
-		PUse         & \\
-		PIUse         & \\
-		PModi        &\\
-		PMot         & \\
-		PSim         & \\
-		PSup         &  \\
-		
-		\midrule
-		Neut         &\\
-		\bottomrule
+		&       &      &                       &                                                     &         &         &            \\
+		Self citations               & 9     & 0    & 0                     & 2 (PBas:1, PMot:1, PModi:1)                         & 6       & 5       & 1          \\
+		From software related fields & 44    & 0    & 0                     & 17 (PBas:4, PModi:2,PUse:7,PMoti:4, PSup:1)         & 27      & 24      & 20         \\
+		Others                       & 72    & 0    & 2                     & 21 (PBas:2, PModi:2,PUse:14,PMoti:2,PSim:1, PSup:2) & 48      & 57      & 15         \\
+		Total                        & 116   & 0    & 2                     & 38 (PBas:6, PModi:2,PUse:21,PMoti:6,PSim:1, PSup:3) & 75      & 81      & 35        \\ \bottomrule
 	\end{tabular}
 \end{table*}
+
+%
+%\begin{table*}
+%	\caption{Results of an analysis of the citing papers}\label{tab:CitationAnalysis}
+%	\begin{tabular}{llllllll}
+%		\toprule
+%%		\textbf{Category}            &
+%		\textbf{Sub-category }& \textbf{Refs.} & \textbf{Self-citations} & \textbf{Our network} & \textbf{From SE} & \textbf{Outside SE} & \textbf{Peer-reviewed} & \textbf{By practitioners} \\                                                                                                          \midrule
+%		 Weak         &                                                                                           \\
+%		\midrule
+%		CoCoGM       &                                                           \\
+%		CoCoR0 \\
+%		CoCo-        & \\
+%		CoCoXY       & \\
+%		\midrule
+%		
+%		PBas         & \\
+%		PUse         & \\
+%		PIUse         & \\
+%		PModi        &\\
+%		PMot         & \\
+%		PSim         & \\
+%		PSup         &  \\
+%		
+%		\midrule
+%		Neut         &\\
+%		\bottomrule
+%	\end{tabular}
+%\end{table*}
 
 While discussing the citations the following reference will be useful \cite{penders2018ten} We can use this to also articulate why we have relied on citations as a way to reflect on the paper.
 
 
-\section{Positioning in consideration of the recent state of the art and practice}\label{sec:soa}
+\section{Positioning in consideration of the recent state of the art and practice}\label{sec:soa} \todo{Henry}
 What has been done after this (partly we'll get it from the previous section).
+Open innovation seems to be the area in SE that has been a follow-up of our work.
 
 \section{Expected impact}\label{sec:impact}
 Here it would be nice to show cases in industry not counting Ericsson. Perhaps we can get it from Section~\ref{sec:whocites}?
 
-\section{New emerging ideas and current vision}\label{sec:fw}
+
+
+\section{New emerging ideas and current vision}\label{sec:fw} \todo{Possibly Richard?}
 What will be done, possibly
 
 
