@@ -178,7 +178,7 @@ Measuring an organization's capability to innovate and assessing its innovation 
 \section{Introduction}\label{sec:intro}\todo {Richard}
 Innovation measurement in SE was a challenge---we contributed with a measurement framework in \theArticle~\cite{EdisonAT13}. 
 
-The paper is structured as follows: Section \ref{sec:sumpaper} summarizes the contribution of \theArticle. In Section \ref{sec:whocites}, we describe a content analysis of the articles citing \theArticle. Section \ref{sec:soa} discusses the research identified in Section \ref{sec:whocites} that has extended our work. In Section \ref{sec:impact}, we discuss the research which documents the use of our work in industrial settings. Lastly, in Section \ref{sec:fw} we suggest some directions for future research.
+The paper is structured as follows: Section \ref{sec:sumpaper} summarizes the contribution of \theArticle. In Section \ref{sec:whocites}, we describe a content analysis of the articles citing \theArticle. Section \ref{sec:soa} discusses the research identified in Section \ref{sec:whocites} that has extended our work. In Section \ref{sec:impact}, we discuss the research which documents the use of our work in industrial settings. Section \ref{sec:fw} concludes the paper with some suggested directions for future research.
 
 \section{Summary and main contributions of \theArticle}\label{sec:sumpaper}\todo{Henry}
 Over the past, companies relied on cost and lead time reduction and quality improvement to strengthening their competitiveness. While quality is necessity, today it is not sufficient. Companies must continuously innovate; develop new processes and deliver new products to achieve and sustain a competitive advantage. Otherwise, they tend to lose their position to new and emerging startups that have innovative offerings. Such turnover signifies the importance of sustained innovation, thus the problem is not happen-stance innovation but rather doing it continuously on a regular basis. For sustained innovation to become a reality, a better understanding of innovation is required, which is possible only when innovation is measured.
@@ -199,7 +199,7 @@ developed for, amongst many things, identifying the aspects of
 innovation that are measurable and thus serving as a starting point
 for innovation measurement
 
-\section{Methodology}
+\section{Methodology}\label{sec:method} \todo{Nauman}
 For understanding the impact of \theArticle, we have relied on the classification schema for academic citations proposed by \citet{teufel2006annotation}. We also considered the taxonomy proposed by \citet{bornmann2008citation}. However, based on a pilot application we found \citet{teufel2006annotation} more straight forward and sufficient for our analysis. The decision is further supported by prior experience of using Bornmann and Daniel's taxonomy in software engineering literature \cite{poulding2015using}.
 
 The categories in the schema we used are listed and briefly described in Table~\ref{tab:CitationCategories}. To separate any industrial application of our work we added a separate category. 
@@ -207,11 +207,14 @@ The categories in the schema we used are listed and briefly described in Table~\
 On February 24, 2020, the \theArticle  had over 72 citations in Science Direct and Scopus, 61 in Web of Science Core Collection, and 234 in Google Scholar. To get a relatively complete picture of how this work has impacted further research, we decided to analyse the 234 citations on Google Scholar. 
 
 In a pilot, the first two authors classified ten randomly selected articles and discussed the use of categories. Thereafter, they divided the 234 articles among them and  independently classified them. The procedure followed is briefly summarized below: 
-Exclude citations where the full-text is not available. 
-Exclude articles which are not written in English.
-Exclude articles  that do not cite \theArticle in the full-text.
-From the title, abstract and the publication venue judge the discipline of the publication (e.g. software industry, manufacturing, farming or automotive).
-Only for conference papers and journal article, search for the citation to \theArticle in the full text, for each citation in the paper  read the entire paragraph containing it to understand the context, then classify the citation based on categories in Table \ref{tab:CitationCategories}. 
+\begin{itemize}
+\item Exclude citations where the full-text is not available. 
+\item Exclude articles which are not written in English.
+\item Exclude articles  that do not cite \theArticle in the full-text.
+\item From the title, abstract and the publication venue judge the discipline of the publication (e.g. software industry, manufacturing, farming or automotive).
+\item Only for conference papers and journal article, search for the citation to \theArticle in the full text, for each citation in the paper  read the entire paragraph containing it to understand the context, then classify the citation based on categories in Table \ref{tab:CitationCategories}.
+\end{itemize}
+ 
 
 
 \begin{table*}
@@ -241,10 +244,9 @@ Only for conference papers and journal article, search for the citation to \theA
 	\end{tabular}
 \end{table*}
 
-\section{Overview of the papers citing \theArticle}\label{sec:whocites}
-Who found it relevant (would be good to have some qualitative data on how they ref the paper). Why did so many cite it?
+\section{Overview of the papers citing \theArticle}\label{sec:whocites} \todo{Nauman} %covers: Who found it relevant (would be good to have some qualitative data on how they ref the paper). Why did so many cite it?}
 
-
+The 234 citations to\theArticle  were analysed using the process described in the Section \ref{sec:method}. 64 
 Exclude papers 64 (52  were not written in English, 6 were inaccessible in full-text, 5 did not cite \theArticle in the body of the paper and 1 was a duplicate citation).
 
 Grey literature:  53 citations are from what we have classified as grey  literature. Of these 53, 2 are  technical reports, 10 are book chapters and 41 are theses.
