@@ -246,16 +246,35 @@ In a pilot, the first two authors classified ten randomly selected articles and 
 
 \section{Overview of the papers citing \theArticle}\label{sec:whocites} \todo{Nauman} %covers: Who found it relevant (would be good to have some qualitative data on how they ref the paper). Why did so many cite it?}
 
-The 234 citations to\theArticle  were analysed using the process described in the Section \ref{sec:method}. 64 
-Exclude papers 64 (52  were not written in English, 6 were inaccessible in full-text, 5 did not cite \theArticle in the body of the paper and 1 was a duplicate citation).
+The 234 citations to\theArticle were analysed using the process described in the Section \ref{sec:method}. Figure~\ref{fig:selection} provides the results of the selection steps. In total 118 citations were excluded from further analysis. 54 were considered grey-literature i.e. books, technical reports and theses. A majority i.e. 42 of the 54 citations in the grey-literature were masters or doctoral theses. Similarly the remaining 64 of the 118 citations were excluded for other reasons (language of the publication, inaccessible full-text, incorrect citation and duplicate citations). A clear majority 52 of the 64 citations excluded in this group were not read in full-text as they were not written in English.
 
-Grey literature:  53 citations are from what we have classified as grey  literature. Of these 53, 2 are  technical reports, 10 are book chapters and 41 are theses.
+Two interesting results emerge from this data: (1) that a significant number of publications not written in English have cited \theArticle, and (2) almost an equal number of citations are from grey literature. This indicates that systematic literature reviews in software engineering, like in medicine, should also develop a strategy to consider such literature or at the least consider the impact of not including such literature in SLRs.
 
-In total there are 108 conference papers  and 76 journal articles citing \theArticle. The analysis of their use of \theArticle is summarized in Table \ref{tab:CitationAnalysis}. 
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth,height=\textheight,keepaspectratio]{Figures/Citations.pdf}
+	\end{center}
+	\caption{Results of applying selection criteria on the citations}
+	\label{fig:selection}
+\end{figure}
 
-The paper has nine self citations (including one from a thesis). 
+%Exclude papers 64 (52  were not written in English, 6 were inaccessible in full-text, 5 did not cite \theArticle in the body of the paper and 1 was a duplicate citation).
+%Grey literature:  53 citations are from what we have classified as grey  literature. Of these 53, 2 are  technical reports, 10 are book chapters and 41 are theses.
 
-When looking at the literature, where there is no stated connection to the context of software industry we see that the literature encompases several diverse fields including the following: automotive, banking, economics, farming, forestry, health sector, human resources, logistics, manufacturing, mechatronics, NGOs, oil industry, politics , restaurants and transportation. 
+The remaining 116 of the 234 citing papers were read in full-text. Of these 81 are journal articles and 35 are conference papers citing \theArticle. This is an interesting result in itself as \theArticle is getting significantly more citations from journal articles and grey-literature than conference papers. When looking at the publication forums from software engineering and other fields we see a different pattern. In SE, 24 of the 44 (55\%) citing papers are journal articles and remaining 20 (i.e. 45\%) are conference papers. Where as in the 72 citing articles from other fields 57 (i.e. 80\%) are journal articles and 15 (i.e. 20\%) are conference papers. We speculate that this may be an artifact of different traditions of publications in different fields i.e. other fields may not have similar tradition of conference proceedings or even a similar frequency of conferences.
+
+
+The analysis of the use of \theArticle in 116 conference papers and journal articles is summarized in Table \ref{tab:CitationAnalysis}. Only eight self citations were identified. 
+
+In \theArticle, we proposed a model and metrics based on a consolidation of research from other fields for software development field. However, it is interesting to observe that the article has been cited frequently in literature from outside software engineering. Only 44 of the 116 (i.e. 38\%) of the publications are on topics related to software development. A majority, 67 of the 116 (i.e. 62\%) of the citing articles have no stated connection to the context of the software industry. These articles encompass several diverse fields including the following: automotive, banking, economics, farming, forestry, health sector, human resources, logistics, manufacturing, mechatronics, NGOs, oil industry, politics, restaurants and transportation.  A more detailed analysis of the reasons for the citations will help speculate the reason for this disparity.
+
+Overall, in terms of the categories of the citing article (please see Table \ref{tab:CitationCategories} for a listing and the definitions of the categories) 75 of 116 (i.e. 65\%) are neutral, 38 of 116 (i.e. 32\%) are neutral, and only 2 of 116 (i.e. less than 1\%) present a comparison/contrast. Surprisingly, we did not find any papers identifying or discussing a weakness of the research documented in \theArticle.
+ 
+We expected that the number of citing articles in different categories will be different for literature from software engineering research and other fields. As we expected more citations identifying weaknesses, presenting comparisons and building on our work from within our discipline. However, similar patterns of citation appear both in and outside software engineering. In software engineering literature, of the 44 citing papers, 17 (i.e. 39\%) are positive, 27 (i.e. 61\%) are neutral while no comparison/contrast or weaknesses of \theArticle are presented. Among the 72 citing papers from other fields, 21 (i.e. 29\%) are positive, 48 (i.e. 67\%) are neutral while 2 citing papers present a comparison/contrast and no citing papers present any weaknesses of \theArticle. Therefore, no discernible difference in citing categories are observed. 
+
+A majority i.e. in 21 of the 38 ( 55\%) citing articles with in the "positive" category, use the definition, metrics or the model proposed in \theArticle. The next most frequent (12 of the 38 cases in the category i.e. 32\%) positive use of \theArticle is as a starting point or motivation for their work. A few articles also describe that they adapted the definitions presented in \theArticle or considered their work similar or supporting the work presented in \theArticle. 
+
+However, we found no documented evidence of applying the model or metrics given in \theArticle in industry in the citing papers. Perhaps they grey literature not considered for the detailed analysis in this study may have reported such a case as an experience report or technical report.
 
 
 
@@ -267,41 +286,12 @@ When looking at the literature, where there is no stated connection to the conte
 		& Total & Weak & Comparison / Contrast & Positive                                            & Neutral & Jrnl. & Conf. \\
 		\midrule
 		&       &      &                       &                                                     &         &         &            \\
-		Self citations               & 9     & 0    & 0                     & 2 (PBas:1, PMot:1, PModi:1)                         & 6       & 5       & 1          \\
+		Self citations               & 8     & 0    & 0                     & 2 (PBas:1, PMot:1, PModi:1)                         & 6       & 5       & 1          \\
 		From software related fields & 44    & 0    & 0                     & 17 (PBas:4, PModi:2,PUse:7,PMoti:4, PSup:1)         & 27      & 24      & 20         \\
 		Others                       & 72    & 0    & 2                     & 21 (PBas:2, PModi:2,PUse:14,PMoti:2,PSim:1, PSup:2) & 48      & 57      & 15         \\
 		Total                        & 116   & 0    & 2                     & 38 (PBas:6, PModi:2,PUse:21,PMoti:6,PSim:1, PSup:3) & 75      & 81      & 35        \\ \bottomrule
 	\end{tabular}
 \end{table*}
-
-%
-%\begin{table*}
-%	\caption{Results of an analysis of the citing papers}\label{tab:CitationAnalysis}
-%	\begin{tabular}{llllllll}
-%		\toprule
-%%		\textbf{Category}            &
-%		\textbf{Sub-category }& \textbf{Refs.} & \textbf{Self-citations} & \textbf{Our network} & \textbf{From SE} & \textbf{Outside SE} & \textbf{Peer-reviewed} & \textbf{By practitioners} \\                                                                                                          \midrule
-%		 Weak         &                                                                                           \\
-%		\midrule
-%		CoCoGM       &                                                           \\
-%		CoCoR0 \\
-%		CoCo-        & \\
-%		CoCoXY       & \\
-%		\midrule
-%		
-%		PBas         & \\
-%		PUse         & \\
-%		PIUse         & \\
-%		PModi        &\\
-%		PMot         & \\
-%		PSim         & \\
-%		PSup         &  \\
-%		
-%		\midrule
-%		Neut         &\\
-%		\bottomrule
-%	\end{tabular}
-%\end{table*}
 
 While discussing the citations the following reference will be useful \cite{penders2018ten} We can use this to also articulate why we have relied on citations as a way to reflect on the paper.
 
@@ -319,9 +309,9 @@ Here it would be nice to show cases in industry not counting Ericsson. Perhaps w
 What will be done, possibly
 
 \section*{Acknowledgement}
-This project has received funding from the European Union's Horizon 2020 research and innovation programme. under the Marie Skłodowska-Curie grant agreement No. 754489 and with the financial support of the Science Foundation Ireland grant 13/RC/2094.
+This project has received funding from the European Union's Horizon 2020 research and innovation programme. under the Marie Skłodowska-Curie grant agreement No. 754489 and with the financial support of the Science Foundation Ireland grant 13/RC/2094. This work has been supported by ELLIIT, a Strategic Area within IT and Mobile Communications, funded by the Swedish Government. The work has also been supported by research grants for the VITS project (reference number 20180127) from the Knowledge Foundation in Sweden.
 
-\section*{References}
+%\section*{References}
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
