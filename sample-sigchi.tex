@@ -268,7 +268,7 @@ In a pilot, the first two authors classified ten randomly selected articles and 
 
 \section{Overview of the papers citing \theArticle}\label{sec:whocites} \todo{Nauman} %covers: Who found it relevant (would be good to have some qualitative data on how they ref the paper). Why did so many cite it?}
 
-The 234 citations to\theArticle were analysed using the process described in the Section \ref{sec:method}. Figure~\ref{fig:selection} provides the results of the selection steps. In total 118 citations were excluded from further analysis. 54 were considered grey-literature i.e. books, technical reports and theses. A majority i.e. 42 of the 54 citations in the grey-literature were masters or doctoral theses. Similarly the remaining 64 of the 118 citations were excluded for other reasons (language of the publication, inaccessible full-text, incorrect citation and duplicate citations). A clear majority 52 of the 64 citations excluded in this group were not read in full-text as they were not written in English.
+The 234 citations to \theArticle were analysed using the process described in the Section \ref{sec:method}. Figure~\ref{fig:selection} provides the results of the selection steps. In total 118 citations were excluded from further analysis. 54 were considered grey-literature i.e. books, technical reports and theses. A majority i.e. 42 of the 54 citations in the grey-literature were masters or doctoral theses. Similarly the remaining 64 of the 118 citations were excluded for other reasons (language of the publication, inaccessible full-text, incorrect citation and duplicate citations). A clear majority 52 of the 64 citations excluded in this group were not read in full-text as they were not written in English.
 
 Two interesting results emerge from this data: (1) that a significant number of publications not written in English have cited \theArticle, and (2) almost an equal number of citations are from grey literature. This indicates that systematic literature reviews in software engineering, like in medicine, should also develop a strategy to consider such literature or at the least consider the impact of not including such literature in SLRs.
 
@@ -322,10 +322,24 @@ While discussing the citations the following reference will be useful \cite{pend
 What has been done after this (partly we'll get it from the previous section).
 Open innovation seems to be the area in SE that has been a follow-up of our work.
 
-\section{Expected impact}\label{sec:impact}
+\section{Expected impact}\label{sec:impact}\todo{Nauman}
 Here it would be nice to show cases in industry not counting Ericsson. Perhaps we can get it from Section~\ref{sec:whocites}?
 
+Figure \ref{fig:citationTrend} shows the trend of citations to \theArticle as indexed on Google Scholar. According to PlumX Metrics\footnote{Please see the following URL for latest statistics for \theArticle \url{https://plu.mx/plum/a/?doi=10.1016/j.jss.2013.01.013&theme=plum-sciencedirect-theme&hideUsage=true}}, in terms of the number of citations provided by Scopus, \theArticle is getting more citations than 97\% of the articles published in 2013 in the journal of systems and software. The article had an advantage since it was available online already in February 2013. However, \theArticle is also doing better than 95\% of the articles published in the journal of systems and software in the years 2013, 2012, and 2011.
 
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth,height=\textheight,keepaspectratio]{Figures/CitationsTrend.pdf}
+	\end{center}
+	\caption{Trend of citations to \theArticle on Google Scholar over the years}
+	\label{fig:citationTrend}
+\end{figure}
+
+A thorough analysis of the citing papers showed no direct industrial impact of \theArticle however the paper has had significant theoretical impact. A reasonable percentage of the citations (38 papers or 32\%) have made use of the theoretical contributions (in terms of the proposed definitions, models and metrics) of \theArticle. 
+
+Also significant is the impact of the paper outside SE, even though the title of the paper and the publication venue are both very explicitly focused on SE.
+
+In this paper we have only analysed the citing papers from conferences and journals that are written in English. But, it is interesting to see that \theArticle has almost as many citations in non-English and non-peer reviewed literature as it does in conference proceedings and journals. 
 
 \section{New emerging ideas and current vision}\label{sec:fw} \todo{Possibly Richard?}
 What will be done, possibly
