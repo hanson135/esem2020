@@ -1,0 +1,155 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{9}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Andrew, Haan{\ae}s, Michael, Sirkin, and
+  Taylor}{Andrew et~al\mbox{.}}{2008}]%
+        {andrew08}
+\bibfield{author}{\bibinfo{person}{James~P. Andrew}, \bibinfo{person}{Knut
+  Haan{\ae}s}, \bibinfo{person}{David~C. Michael}, \bibinfo{person}{Harold~L.
+  Sirkin}, {and} \bibinfo{person}{Adrew Taylor}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{A BCG Senior Management Survey: Measuring
+  Innovation 2008 -- Squandered Opportunities}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{The
+  Boston Consulting Group}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bornmann and Daniel}{Bornmann and
+  Daniel}{2008}]%
+        {bornmann2008citation}
+\bibfield{author}{\bibinfo{person}{Lutz Bornmann} {and}
+  \bibinfo{person}{Hans-Dieter Daniel}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{What do citation counts measure? A review of
+  studies on citing behavior}.
+\newblock \bibinfo{journal}{\emph{Journal of Documentation}}
+  \bibinfo{volume}{64} (\bibinfo{year}{2008}), \bibinfo{pages}{45--80}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Creswell}{Creswell}{2009}]%
+        {creswell09}
+\bibfield{author}{\bibinfo{person}{J.~W. Creswell}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Research Design: Qualitative, Quantitative,
+  and Mixed Methods Approaches} (\bibinfo{edition}{3rd.} ed.)}.
+\newblock \bibinfo{publisher}{Sage Publication, Inc}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Edison, Ali, and Torkar}{Edison
+  et~al\mbox{.}}{2013}]%
+        {EdisonAT13}
+\bibfield{author}{\bibinfo{person}{Henry Edison}, \bibinfo{person}{Nauman~Bin
+  Ali}, {and} \bibinfo{person}{Richard Torkar}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Towards innovation measurement in the software
+  industry}.
+\newblock \bibinfo{journal}{\emph{Journal of Systems and Software}}
+  \bibinfo{volume}{86}, \bibinfo{number}{5} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{1390--1407}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kasunic}{Kasunic}{2005}]%
+        {kasunic05}
+\bibfield{author}{\bibinfo{person}{M. Kasunic}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Designing An Effiective Survey}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Carnegie
+  Mellon, Software Engineering Institute}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kitchenham and Charter}{Kitchenham and
+  Charter}{2007}]%
+        {kitchenham07}
+\bibfield{author}{\bibinfo{person}{Barbara Kitchenham} {and}
+  \bibinfo{person}{S. Charter}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Guidelines for Performing Systematic
+  Literature Reviews in Software Engineering}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport} EBSE 2007-001.
+  \bibinfo{institution}{Keele University and Durham University Joint Report}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Penders}{Penders}{2018}]%
+        {penders2018ten}
+\bibfield{author}{\bibinfo{person}{Bart Penders}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Ten simple rules for responsible referencing}.
+\newblock \bibinfo{journal}{\emph{PLOS Computational Biology}}
+  \bibinfo{volume}{14}, \bibinfo{number}{4} (\bibinfo{date}{04}
+  \bibinfo{year}{2018}), \bibinfo{pages}{1--6}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1371/journal.pcbi.1006036}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Poulding}, {Petersen}, {Feldt}, and
+  {Garousi}}{{Poulding} et~al\mbox{.}}{2015}]%
+        {poulding2015using}
+\bibfield{author}{\bibinfo{person}{S. {Poulding}}, \bibinfo{person}{K.
+  {Petersen}}, \bibinfo{person}{R. {Feldt}}, {and} \bibinfo{person}{V.
+  {Garousi}}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Using Citation Behavior to Rethink Academic Impact
+  in Software Engineering}. In \bibinfo{booktitle}{\emph{2015 ACM/IEEE
+  International Symposium on Empirical Software Engineering and Measurement
+  (ESEM)}}. \bibinfo{publisher}{IEEE}, \bibinfo{address}{Beijing, China},
+  \bibinfo{pages}{1--4}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Teufel, Siddharthan, and Tidhar}{Teufel
+  et~al\mbox{.}}{2009}]%
+        {teufel2006annotation}
+\bibfield{author}{\bibinfo{person}{Simone Teufel}, \bibinfo{person}{Advaith
+  Siddharthan}, {and} \bibinfo{person}{Dan Tidhar}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{An annotation scheme for citation function}. In
+  \bibinfo{booktitle}{\emph{{Proceedings of the 7th SIGdial Workshop on
+  Discourse and Dialogue}}} (Sydney, Australia) \emph{(\bibinfo{series}{SigDIAL
+  '06})}. \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{USA}, \bibinfo{pages}{80--87}.
+\newblock
+\showISBNx{193243271X}
+
+
+\end{thebibliography}
