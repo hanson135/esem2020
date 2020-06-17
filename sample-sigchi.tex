@@ -25,6 +25,7 @@
 \documentclass[sigplan]{acmart}
 \usepackage{booktabs}
 \usepackage{todonotes}
+\usepackage{multirow}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -318,10 +319,27 @@ However, we found no documented evidence of applying the model or metrics given 
 While discussing the citations the following reference will be useful \cite{penders2018ten} We can use this to also articulate why we have relied on citations as a way to reflect on the paper.
 
 
-\section{Positioning in consideration of the recent state of the art and practice}\label{sec:soa} \todo{Henry} \todo[inline]{Nauman: I would suggest that there are 44 peer-reviewed articles that cite our paper which we have considered from SE literature. In this section, we can present a brief mapping of these papers e.g. topics of these papers (like open innovation, ecosystems, Lean and agile, startups), research type (empirical, theoretical, ...) etc. In a way covering what has been done in papers that cite our work (thus going in a bit more detail of the 44 papers identified in the previous section). %Open innovation seems to be the area in SE that has been a follow-up of our work.}
-Our reading from the 17 citing papers that indicate a positive sentiment reveals that open innovation seems to be the area in SE that has been a follow-up of our work. Open innovation is based on outside-in and inside-out knowledge flows that leverage both product and process innovation. 
+\section{Positioning in consideration of the recent state of the art and practice}\label{sec:soa} %\todo{Henry} \todo[inline]{Nauman: I would suggest that there are 44 peer-reviewed articles that cite our paper which we have considered from SE literature. In this section, we can present a brief mapping of these papers e.g. topics of these papers (like open innovation, ecosystems, Lean and agile, startups), research type (empirical, theoretical, ...) etc. In a way covering what has been done in papers that cite our work (thus going in a bit more detail of the 44 papers identified in the previous section). %Open innovation seems to be the area in SE that has been a follow-up of our work.}
+Our reading from the 44 citing papers indicate various research areas within SE context, e.g. software measurement, requirement engineering, software ecosystem and agile. Open innovation seems to gain more interest from scholars (6 papers). Open innovation is based on outside-in and inside-out knowledge flows that leverages both product and process innovation. Innovation stimulus, innovation measurement, and corporate innovation are the second most topics which are reported in 4 papers each. Innovation stimulus focuses on the key factors or determinant of innovation, while corporate innovation deals with leveraging innovation in the large companies. In addition, three papers focus on innovation process model.
 
+In terms of research type, 13 citing studies were theoretical papers (including literature review papers), while 28 were empirical research. All of the empirical research employed qualitative method. Case study was the predominant research method (21 studies), followed by Grounded Theory (2 studies), survey (2 studies), Design Science, experiment and interview (1 study each). The summary of citing papers in SE and research method is shown in Table \ref{tab:papers_method}.
 
+\begin{table*}[!ht]
+\caption{Citing Papers and Research Method}
+\label{tab:papers_method}
+\begin{tabular}{p{4cm}p{1.7cm}p{1.7cm}p{3cm}lp{1.7cm}}	\toprule
+	Theme & \multicolumn{5}{c}{Type of Studies} \\ \cline{2-6}
+          & \multirow{2}{*}{\parbox{2.5cm}{Theoretical}} & \multicolumn{4}{c}{Empirical} \\ \cline{3-6}
+                         &             & Case Study & Grounded Theory & Survey & Others \\ \midrule
+Open Innovation          & 4           & 1          &                 & 1      &                                                           \\
+Innovation Stimulus      & 1           & 2          &                 &        & 1                                                         \\
+Corporate Innovation     & 1           & 3          &                 &        &                                                           \\
+Innovation Measurement   &             & 4          &                 &        &                                                           \\
+Innovation Process Model &             & 2          & 1               &        &                                                           \\
+Others                   & 7           & 9          & 1               & 1      & 2              
+\\ \bottomrule                                          
+\end{tabular}
+\end{table*}
 
 \section{Expected impact}\label{sec:impact}\todo{Nauman}
 Here it would be nice to show cases in industry not counting Ericsson. Perhaps we can get it from Section~\ref{sec:whocites}?
